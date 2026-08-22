@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Progtera develops focused scientific software for researchers and engineers.">
+  <meta name="theme-color" content="#102f6b">
+  <title>Progtera | Scientific Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top" aria-label="Progtera home">
+        <img class="brand-logo" src="assets/progtera-logo-black.png" alt="Progtera">
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#workbench">Workbench</a>
+        <a href="#opensource">Open Source</a>
+        <a href="#about">About</a>
+        <a class="contact-link" href="mailto:progterainfo@gmail.com">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow">Scientific software, deliberately simpler.</div>
+          <h1>Complex science deserves a clear interface.</h1>
+          <p class="lead">
+            Progtera develops focused software that helps researchers and engineers
+            build, run and understand computational workflows—without hiding the
+            science underneath.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="#workbench">Explore the workbench</a>
+            <a class="btn ghost" href="#opensource">Supported open source</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="workbench">
+      <div class="container">
+        <p class="section-label">PROGTERA PRODUCT</p>
+        <div class="section-head">
+          <div>
+            <h2>Scientific Workbench</h2>
+            <p>A proprietary desktop environment for scientific simulation workflows.</p>
+          </div>
+          <span class="badge">In development</span>
+        </div>
+
+        <div class="workbench-card">
+          <div class="workbench-intro">
+            <h3>From scientific object to result, without the usual friction.</h3>
+            <p>
+              The workbench is being designed around a direct workflow: select a structure
+              or device, choose what you want to calculate, review the meaningful settings,
+              and run. Native engine inputs remain visible for advanced users.
+            </p>
+          </div>
+
+          <div class="flow" aria-label="Product workflow">
+            <span>Structure / Device</span><b>→</b>
+            <span>Scientific task</span><b>→</b>
+            <span>Run</span><b>→</b>
+            <span>Results</span>
+          </div>
+
+          <div class="feature-grid">
+            <article>
+              <h4>Engine-neutral workflows</h4>
+              <p>Scientific tasks stay central while compatible computational engines remain replaceable underneath.</p>
+            </article>
+            <article>
+              <h4>Local to HPC</h4>
+              <p>The same project and job model is intended to work from a workstation to remote HPC systems.</p>
+            </article>
+            <article>
+              <h4>Expert escape hatch</h4>
+              <p>Native inputs, raw logs and engine-specific controls remain accessible when needed.</p>
+            </article>
+            <article>
+              <h4>Reproducibility by design</h4>
+              <p>Calculation artifacts and provenance stay together in an inspectable project structure.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="opensource">
+      <div class="container">
+        <p class="section-label">SUPPORTED OPEN SOURCE</p>
+        <div class="section-head open-source-head">
+          <div>
+            <h2>Open projects we support</h2>
+            <p>
+              These are independent open-source projects supported by Progtera.
+              <strong>They are not Progtera commercial products.</strong>
+            </p>
+          </div>
+        </div>
+
+        <div class="oss-grid">
+          <article class="oss-card">
+            <div class="oss-tags"><span>MIT</span><span>Materials simulation</span></div>
+            <h3>Nanoworks</h3>
+            <p>
+              An open-source scientific workflow and orchestration project for atomistic
+              and materials simulations, evolving toward multiple computational engines.
+            </p>
+            <a href="https://github.com/sblisesivdin/nanoworks" target="_blank" rel="noreferrer">
+              View project on GitHub ↗
+            </a>
+          </article>
+
+          <article class="oss-card">
+            <div class="oss-tags"><span>GPLv3</span><span>Semiconductor devices</span></div>
+            <h3>Aestimo</h3>
+            <p>
+              An open-source one-dimensional self-consistent Schrödinger–Poisson solver
+              for semiconductor heterostructures and quantum-device research.
+            </p>
+            <a href="https://github.com/aestimosolver/aestimo" target="_blank" rel="noreferrer">
+              View project on GitHub ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-label">ABOUT PROGTERA</p>
+          <h2>Research-informed software engineering.</h2>
+        </div>
+        <div class="about-copy">
+          <p>
+            Progtera is being built around a narrow idea: scientific software should make
+            advanced methods easier to use without turning them into black boxes.
+          </p>
+          <p>
+            Our focus is the intersection of science, engineering and software—especially
+            computational materials, semiconductor research and reproducible scientific workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-band">
+      <div class="container contact-grid">
+        <div>
+          <p class="section-label inverse">CONTACT</p>
+          <h2>Interested in what we are building?</h2>
+        </div>
+        <a class="btn light" href="mailto:progterainfo@gmail.com">progterainfo@gmail.com</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <span>© <span id="year"></span> Progtera</span>
+      <span>Scientific software for researchers and engineers.</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
