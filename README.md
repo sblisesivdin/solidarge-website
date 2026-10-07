@@ -1,7 +1,18 @@
-# Progtera static website v5
+# Solidarge website
 
-Changes:
-- Replaced the CSS-reconstructed logo with the actual user-supplied black Progtera logo.
-- Logo background was made transparent and tightly cropped.
-- Removed the 01/02/03 hero card (retained from v4).
-- Header logo now preserves the official 12-dot layout and tonal progression.
+Static website for Solidarge, a scientific software company in development.
+
+Website: https://www.solidarge.com/
+
+## Files
+
+- `index.html`: company, Scientific Workbench, supported open-source projects and contact information.
+- `style.css`: responsive site styles.
+- `assets/solidarge-logo.png`: official Solidarge logo.
+- `CNAME`: custom domain for GitHub Pages.
+
+## Preview
+
+Run `python -m http.server 8000` from this directory and open http://localhost:8000/.
+
+The existing contact address is retained until a replacement is confirmed.
