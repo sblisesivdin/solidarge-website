@@ -3,162 +3,82 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Solidarge develops Scientific Workbench, a desktop environment for materials simulation workflows powered by Nanoworks.">
-  <meta name="theme-color" content="#102f6b">
-  <title>Solidarge | Scientific Software</title>
+  <meta name="description" content="Solidarge is developing Scientific Workbench, a desktop application for materials research, built around Nanoworks.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Solidarge — Scientific Workbench</title>
   <link rel="canonical" href="https://www.solidarge.com/">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
-    <div class="container nav-wrap">
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page">
+    <header class="site-header">
       <a class="brand" href="#top" aria-label="Solidarge home">
-        <img class="brand-logo" src="assets/solidarge-logo.png" alt="Solidarge" width="659" height="222">
+        <img src="assets/solidarge-logo.png" alt="Solidarge" width="659" height="222">
       </a>
-      <nav class="nav" aria-label="Primary">
+      <nav aria-label="Main navigation">
         <a href="#workbench">Workbench</a>
         <a href="#nanoworks">Nanoworks</a>
-        <a href="#about">About</a>
-        <a class="contact-link" href="mailto:solidarge@gmail.com">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <div class="eyebrow">Scientific software, deliberately simpler.</div>
-          <h1>Complex science deserves a clear interface.</h1>
-          <p class="lead">
-            Solidarge is developing Scientific Workbench, a desktop environment that helps
-            researchers build, run and understand materials simulation workflows
-            through Nanoworks—without hiding the science underneath.
-          </p>
-          <div class="actions">
-            <a class="btn primary" href="#workbench">Explore the workbench</a>
-            <a class="btn ghost" href="#nanoworks">Powered by Nanoworks</a>
-          </div>
+    <main id="main">
+      <section class="introduction" aria-labelledby="intro-title">
+        <h1 id="intro-title">Software for<br>materials research.</h1>
+        <div class="intro-note">
+          <p>We are developing Scientific Workbench: a desktop application for preparing structures, setting up calculations and working with their results.</p>
+          <p class="development">Currently in development.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section" id="workbench">
-      <div class="container">
-        <p class="section-label">SOLIDARGE PRODUCT</p>
-        <div class="section-head">
-          <div>
-            <h2>Scientific Workbench</h2>
-            <p>Solidarge’s proprietary desktop environment for materials simulation workflows, powered by Nanoworks.</p>
-          </div>
-          <span class="badge">In development</span>
+      <section class="workbench" id="workbench" aria-labelledby="workbench-title">
+        <div class="section-heading">
+          <h2 id="workbench-title">Scientific Workbench</h2>
+          <p>A Solidarge desktop application</p>
         </div>
-
-        <div class="workbench-card">
-          <div class="workbench-intro">
-            <h3>From structure to result, without the usual friction.</h3>
-            <p>
-              The workbench is being designed around a direct workflow: build or import a
-              structure, choose what you want to calculate, review the meaningful settings,
-              and run through Nanoworks. Calculation inputs remain visible for advanced users.
-            </p>
-          </div>
-
-          <div class="flow" aria-label="Product workflow">
-            <span>Structure</span><b>→</b>
-            <span>Scientific task</span><b>→</b>
-            <span>Run</span><b>→</b>
-            <span>Results</span>
-          </div>
-
-          <div class="feature-grid">
-            <article>
-              <h4>Nanoworks integration</h4>
-              <p>Structure preparation, calculation settings and results come together in a desktop workflow powered by Nanoworks.</p>
-            </article>
-            <article>
-              <h4>Local to HPC</h4>
-              <p>The same project and job model is intended to work from a workstation to remote HPC systems.</p>
-            </article>
-            <article>
-              <h4>Expert escape hatch</h4>
-              <p>Native inputs, raw logs and engine-specific controls remain accessible when needed.</p>
-            </article>
-            <article>
-              <h4>Reproducibility by design</h4>
-              <p>Calculation artifacts and provenance stay together in an inspectable project structure.</p>
-            </article>
-          </div>
+        <div class="workbench-body">
+          <p class="description">A calculation starts with a structure. Workbench brings the structure, calculation settings and output into one working environment, with Nanoworks handling the calculations.</p>
+          <dl class="workflow">
+            <div>
+              <dt>Prepare a structure</dt>
+              <dd>Build or import an atomic structure in the Builder, then pass it to a calculation window.</dd>
+            </div>
+            <div>
+              <dt>Set up a calculation</dt>
+              <dd>Choose the calculation tasks and review the Nanoworks input. Your structure and input files remain accessible.</dd>
+            </div>
+            <div>
+              <dt>Work with the output</dt>
+              <dd>Follow calculation logs and examine the results alongside the files that produced them.</dd>
+            </div>
+          </dl>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="section alt" id="nanoworks">
-      <div class="container">
-        <p class="section-label">CALCULATION FOUNDATION</p>
-        <div class="section-head open-source-head">
-          <div>
-            <h2>Powered by Nanoworks</h2>
-            <p>
-              Scientific Workbench brings a desktop interface to Nanoworks workflows,
-              connecting structure preparation, calculation setup and results.
-            </p>
-          </div>
+      <section class="nanoworks" id="nanoworks" aria-labelledby="nanoworks-title">
+        <h2 id="nanoworks-title">Built around Nanoworks</h2>
+        <div class="nanoworks-copy">
+          <p>Scientific Workbench is Solidarge’s proprietary desktop product. Its calculation workflows use <a href="https://nanoworks.readthedocs.io/">Nanoworks</a>, an independent open-source command-line tool for materials simulation.</p>
+          <p>Nanoworks can also be used on its own.</p>
+          <p class="project-links"><a href="https://nanoworks.readthedocs.io/">Documentation</a><a href="https://github.com/sblisesivdin/nanoworks">Source code</a></p>
         </div>
+      </section>
 
-        <article class="oss-card">
-          <div class="oss-tags"><span>MIT</span><span>Materials simulation</span></div>
-          <h3>Nanoworks</h3>
-          <p>
-            Nanoworks is the open-source calculation and workflow foundation used by
-            Scientific Workbench. It remains available independently as a command-line tool.
-          </p>
-          <a href="https://github.com/sblisesivdin/nanoworks" target="_blank" rel="noreferrer">
-            View Nanoworks on GitHub ↗
-          </a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container about-grid">
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Get in touch</h2>
         <div>
-          <p class="section-label">ABOUT SOLIDARGE</p>
-          <h2>Research-informed software engineering.</h2>
+          <p>For questions about Scientific Workbench or our work:</p>
+          <a class="email" href="mailto:solidarge@gmail.com">solidarge@gmail.com</a>
         </div>
-        <div class="about-copy">
-          <p>
-            Solidarge is being built around a narrow idea: scientific software should make
-            advanced methods easier to use without turning them into black boxes.
-          </p>
-          <p>
-            Our focus is the intersection of science, engineering and software—especially
-            computational materials, semiconductor research and reproducible scientific workflows.
-          </p>
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="contact-band">
-      <div class="container contact-grid">
-        <div>
-          <p class="section-label inverse">CONTACT</p>
-          <h2>Interested in what we are building?</h2>
-        </div>
-        <a class="btn light" href="mailto:solidarge@gmail.com">solidarge@gmail.com</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-row">
-      <span>© <span id="year"></span> Solidarge</span>
-      <span>Scientific software for researchers and engineers.</span>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <footer>
+      <span>© <span id="year">2026</span> Solidarge</span>
+      <span>Scientific software</span>
+    </footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
